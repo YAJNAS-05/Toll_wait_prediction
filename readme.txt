@@ -1,12 +1,6 @@
 -----------------------------
 🚦 TRAFFIC ANALYZER PROJECT
 -----------------------------
-
-▶ Student Details:
-1. Jayashree Annupama RK -- 2303717624322022
-2. Pooja S -- 2303717624322039
-3. Sanjay Karthik S -- 2303717624321049
-
 ----------------------------------
 ▶ Features / Bugs / Missing:
 ----------------------------------
@@ -97,24 +91,6 @@ You will see the web interface to upload files.
 - If video doesn’t show: check that the output is .mp4 and browser supports it.
 - For slow video processing, keep video resolution under 720p.
 - Ensure .pkl files exist and are not corrupted.
-
-----------------------------------
-▶ Team Contribution:
-----------------------------------
-
-🔹 Sanjay Karthik S
-- ML model training (density + toll wait)
-- Flask backend and model integration
-
-🔹 Jayashree Annupama RK
-- Bootstrap HTML and frontend layout
-- Spinner/loader logic
-- Result formatting and deployment prep
-
-🔹 Pooja S
-- YOLO model integration
-- Video frame analysis
-- Debugging and testing with real inputs
 
 -----------------------------
 ✅ THANK YOU!

@@ -1,0 +1,5 @@
+flask
+torch
+torchvision
+scikit-learn
+opencv-python
