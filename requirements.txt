@@ -1,5 +1,5 @@
 flask
-torch
-torchvision
-scikit-learn
+werkzeug
 opencv-python
+joblib
+torch
