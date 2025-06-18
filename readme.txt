@@ -1,97 +1,107 @@
+<<<<<<< HEAD
 -----------------------------
 🚦 TRAFFIC ANALYZER PROJECT
 -----------------------------
 ----------------------------------
 ▶ Features / Bugs / Missing:
 ----------------------------------
+=======
 
-✅ Features Implemented:
-- Image upload for vehicle detection
-- Video upload for real-time vehicle detection
-- Traffic density prediction using trained ML model
-- Toll wait time prediction using regression
-- Automatic annotation of image/video frames
-- Spinner/progress animation while analyzing video
-- Bootstrap-based responsive UI
+# 🚦 Toll Wait Time Prediction and Traffic Monitoring App
 
-⚠ Known Bugs:
-- Video processing may take time for large files (no progress bar % shown)
-- Browser may need refresh after large video analysis
-- No audio alerts added (optional feature)
-- App doesn't restrict upload size (may crash if very large files are uploaded)
-- No clear error message if ML model files are missing
-- Video player might not appear if browser does not support .mp4
+This project is a machine learning-powered web application designed to predict **toll booth wait times** and monitor **traffic density** using computer vision and pre-trained models.
+>>>>>>> de8402c8c7ebbcec3ef630e7fe9258231ed264c6
 
-❌ Missing:
-- Live webcam input support
-- History of past uploads (no result log or database)
-- Mobile responsiveness could be improved (layout breaks on very small screens)
-- No compression or optimization for uploaded/processed video files
-- No admin or user login authentication
-- No option to download the processed video/image
+---
 
-----------------------------------
-▶ Special Instructions: How to Run the Project
-----------------------------------
+## 📂 Project Structure
 
-This section explains how to set up and run the project locally on any Windows/Linux/Mac machine with Python installed.
-
-🛠 Step 1: Install Python (if not already installed)
-- Download and install Python 3.8 or above from: https://www.python.org/downloads/
-
-🧱 Step 2: Install Required Python Libraries
-Open a terminal or command prompt in your project folder and run:
-
-pip install flask torch torchvision opencv-python scikit-learn joblib
-
-This will install:
-- Flask: for the web app
-- Torch & Torchvision: for the YOLOv5 model
-- OpenCV: for image/video processing
-- Scikit-learn: for ML predictions
-- Joblib: to load saved ML models
-
-📁 Step 3: Project Folder Structure
-Make sure your folder looks like this:
-
+```
 traffic_app/
-├── app.py
-├── traffic_density_model.pkl
-├── toll_time_model.pkl
+│
+├── app.py                        # Main Flask application
+├── readme.txt                    # Initial notes
+├── yolov5s.pt                    # YOLOv5 pre-trained weights for vehicle detection
+├── toll_time_model.pkl          # Trained ML model for toll wait time prediction
+├── traffic_density_model.pkl    # Trained ML model for traffic density classification
 ├── templates/
-│   └── index.html
-├── static/
-│   └── uploads/
+│   └── index.html               # Frontend HTML interface
+```
 
-🚀 Step 4: Run the App
-In terminal/command prompt, run:
+---
 
+## ⚙️ Features
+
+- **Vehicle Detection** using YOLOv5
+- **Traffic Density Classification** using a trained ML model
+- **Toll Wait Time Prediction** based on traffic conditions
+- Simple web interface built with **Flask**
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/YAJNAS-05/Toll_wait_prediction.git
+cd Toll_wait_prediction
+```
+
+### 2. Install Dependencies
+Make sure Python 3.8+ is installed.
+
+```bash
+pip install -r requirements.txt
+```
+
+If you don’t have a `requirements.txt`, install key packages manually:
+```bash
+pip install flask torch torchvision scikit-learn opencv-python
+```
+
+### 3. Run the App
+```bash
 python app.py
+```
 
-You will see:
+Then open your browser and go to: [http://localhost:5000](http://localhost:5000)
 
- * Running on http://127.0.0.1:5000
+---
 
-🌐 Step 5: Open in Browser
-Go to: http://127.0.0.1:5000
+## 🧠 Models Used
 
-You will see the web interface to upload files.
+- `yolov5s.pt`: Pre-trained YOLOv5 model for real-time vehicle detection.
+- `traffic_density_model.pkl`: Custom-trained classifier for predicting traffic congestion level.
+- `toll_time_model.pkl`: ML regression model to predict estimated waiting time at tolls.
 
-📸 Step 6: Using the Web App
-1. Click "Choose File" to upload an image or video.
-2. Select the mode from the dropdown (Image or Video).
-3. Click the "Analyze" button.
-4. A spinner will show while the analysis is happening.
-5. After processing:
-   - Image: output with predictions is shown.
-   - Video: output video will play with overlays.
+---
 
-❗ Troubleshooting:
-- Make sure the uploads/ folder has write permissions.
-- If video doesn’t show: check that the output is .mp4 and browser supports it.
-- For slow video processing, keep video resolution under 720p.
-- Ensure .pkl files exist and are not corrupted.
+## 📸 Demo
 
+<<<<<<< HEAD
 -----------------------------
 ✅ THANK YOU!
 -----------------------------
+=======
+_Screenshots or demo GIF can be added here._
+
+---
+
+## 🛠️ Future Improvements
+
+- Add support for real-time video feed from traffic cameras
+- Improve UI design
+- Deploy on cloud (e.g., Render, AWS, or Streamlit Cloud)
+
+---
+
+## 📄 License
+
+This project is for educational purposes. License can be added here.
+
+---
+
+## 🙋‍♂️ Author
+
+Developed by [YAJNAS-05](https://github.com/YAJNAS-05)
+>>>>>>> de8402c8c7ebbcec3ef630e7fe9258231ed264c6
